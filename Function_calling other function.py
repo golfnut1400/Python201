@@ -13,8 +13,9 @@ def area(radius):
     return b
 
 def area2(xc, yc, xp, yp):
-    radius = distance(xc, yc, xp, yp)
-    result = area(radius)
+    radius = distance(xc, yc, xp, yp) # function calling distance function
+    result = area(radius)  # function calling area function. value from radius is
+                                #passed onto area function
     return result
 
 print(area2(0,0,1,1))
