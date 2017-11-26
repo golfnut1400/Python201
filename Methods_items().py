@@ -15,6 +15,6 @@ print(return_value)   # returns tuples of key:value pairs in a list noted by the
 print()
 capitals = {'France':'Paris', 'Washington':'Seattle', 'UK':'London','Germany':'Berlin','Hawaii': 'Honolulu'}
 print(capitals, len(capitals))
-return_value = list(capitals.items())  #returns the 'list()'
+return_value = list(capitals.items())  #returns the items in the dictionary as a 'list()'
 print(return_value)   # returns tuples of key:value pairs in a list noted by the '[ ] ' brackets
-                        # not in the print -- this returns a list
+                        # note in the print -- this returns a list

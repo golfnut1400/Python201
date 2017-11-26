@@ -10,7 +10,7 @@ def sumTo(aBound):
         aNumber = aNumber + 1
     return theSum
 
-print(sumTo(4))  # calls the function above
+print(sumTo(5))  # calls the function above
 
 
 

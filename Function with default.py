@@ -10,6 +10,7 @@ def another_message(message ="Hello Stan", number = 2):  # here are defaults
 
 
 another_message("My message for you", 1)  # passing of two arguments to function
+another_message()   # this will use the default parameters above
 
 
 print()
@@ -25,7 +26,7 @@ def my_message(message ="Hello Stan", number = 2):  # here are defaults
 
 
 
-my_message()  # no arguments passed to function
+my_message()  # no arguments passed to function. The default parameters will be used
 
 print()
 
@@ -38,6 +39,6 @@ def my_message(message ="Hello Stan", number = 2):  # here are defaults
 
 
 
-my_message(message = 'I love pasta')  # no arguments passed to function
+my_message(message = 'I love pasta very much')  # no 'number' argument passed to function
 
 
