@@ -77,7 +77,7 @@ dev2 = Developer('Sara','Johns', 105000, 'Java', 'Facebook')
 # print("Work Location:", dev1.work_location)
 
 #   (first, last, pay, work location, employee)
-mgr_1 = Manager('Sue','Black',90000, 'Amazon', [dev1])  # adds employee (dev1) to the mgr_1
+mgr_1 = Manager('Sue','Black',90000, 'Amazon', [dev1])  # adds employee [dev1] to the mgr_1
 
 # Add a new employee (dev2)to Manager
 mgr_1.add_emp(dev2)

@@ -1,4 +1,17 @@
-import datetime
+
+"""UNIT TESTING ------->
+This unit test will use 'test_employee.py file in the same file directory
+
+Based off YouTube channel
+by Corey Shaffer
+Python Tutorial: Unit Testing Your Code with the unittest Module
+https://www.youtube.com/watch?v=6tNS--WetLI
+
+How to run in Terminal
+1 - change directory to the location the test files are located (/PycharmProjects/Python201-EDx/Python201
+2 - Type: python -m unittest test_employee"""
+
+
 
 class Employee:
 
@@ -25,33 +38,5 @@ class Employee:
                                         # since this is a reserved word
         cls.raise_amount = amount
 
-    # class method for parsing the string of new employees
-    @classmethod
-    def from_string(cls, emp_str):
-        # use of the 'split()' method
-        first, last, pay = emp_str.split('-')
-        return cls(first, last, pay)
-
-
-    # Static method. Static method does not take a cls or self.
-    @staticmethod
-    def is_workday(date):
-        if date.weekday() == 5 or date.weekday() == 6:  # 5 = Saturday; 6 = Sunday
-            return False
-        return True
-
-
-
-
-emp1 = Employee('Stan','Corpuz', 100000)
-emp2 = Employee('Mari','Corpuz', 200000)
-
-#Variable use to pass to is_workday method
-my_date = datetime.date(2017, 11, 23)
-
-#calls the .is_workday function abve
-print ("Is the date a workday?",Employee.is_workday(my_date))
-print(Employee.fullname(emp1))
-print(Employee.fullname(emp2))
 
 

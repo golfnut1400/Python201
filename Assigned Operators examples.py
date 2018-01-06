@@ -21,3 +21,6 @@ print(z)
 
 z = x // y
 print(z)
+
+z = x * x
+print(z)
